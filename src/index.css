@@ -1,0 +1,311 @@
+@import "tailwindcss";
+
+/* ========================================================
+   PACKAI THEME ENGINE
+   - normal (Default): Clean, professional, high-contrast light theme
+   - dark: Sleek modern slate-950 dark theme
+   - food: Warm saffron / harvest culinary amber theme
+   ======================================================== */
+
+/* --------------------------------------------------------
+   1. NORMAL THEME (Default: Clean Modern Light)
+   -------------------------------------------------------- */
+[data-theme="normal"],
+[data-theme="normal"] body {
+  background-color: #f8fafc !important;
+  color: #0f172a !important;
+}
+
+/* Backgrounds & Cards in Normal Mode */
+[data-theme="normal"] .bg-slate-950,
+[data-theme="normal"] .bg-slate-950\/95,
+[data-theme="normal"] .bg-slate-950\/90,
+[data-theme="normal"] .bg-slate-950\/80 {
+  background-color: #ffffff !important;
+}
+
+[data-theme="normal"] .bg-slate-900,
+[data-theme="normal"] .bg-slate-900\/95,
+[data-theme="normal"] .bg-slate-900\/90,
+[data-theme="normal"] .bg-slate-900\/80 {
+  background-color: #ffffff !important;
+}
+
+[data-theme="normal"] .bg-slate-950\/70,
+[data-theme="normal"] .bg-slate-950\/60,
+[data-theme="normal"] .bg-slate-950\/40,
+[data-theme="normal"] .bg-slate-900\/60,
+[data-theme="normal"] .bg-slate-900\/40 {
+  background-color: #f8fafc !important;
+}
+
+/* Card Gradient containers flattened to clean white cards */
+[data-theme="normal"] .bg-gradient-to-br.from-amber-950\/20,
+[data-theme="normal"] .bg-gradient-to-br.from-amber-950\/30 {
+  background: #ffffff !important;
+}
+
+/* Clean Borders in Normal Mode */
+[data-theme="normal"] .border-slate-800,
+[data-theme="normal"] .border-slate-800\/80,
+[data-theme="normal"] .border-slate-700,
+[data-theme="normal"] .border-slate-700\/80,
+[data-theme="normal"] .border-amber-900\/30,
+[data-theme="normal"] .border-amber-900\/40,
+[data-theme="normal"] .border-amber-800\/40,
+[data-theme="normal"] .border-amber-600\/30,
+[data-theme="normal"] .border-emerald-900\/40 {
+  border-color: #e2e8f0 !important;
+}
+
+/* Typography in Normal Mode */
+[data-theme="normal"] h1,
+[data-theme="normal"] h2,
+[data-theme="normal"] h3,
+[data-theme="normal"] h4,
+[data-theme="normal"] .text-white {
+  color: #0f172a !important;
+}
+
+[data-theme="normal"] .text-slate-100 {
+  color: #0f172a !important;
+}
+
+[data-theme="normal"] .text-slate-200 {
+  color: #334155 !important;
+}
+
+[data-theme="normal"] .text-slate-300 {
+  color: #475569 !important;
+}
+
+[data-theme="normal"] .text-slate-400 {
+  color: #64748b !important;
+}
+
+[data-theme="normal"] .text-slate-500 {
+  color: #64748b !important;
+}
+
+[data-theme="normal"] .text-amber-200,
+[data-theme="normal"] .text-amber-200\/80 {
+  color: #92400e !important;
+}
+
+[data-theme="normal"] .text-amber-300 {
+  color: #b45309 !important;
+}
+
+/* Form Inputs in Normal Mode */
+[data-theme="normal"] input,
+[data-theme="normal"] select,
+[data-theme="normal"] textarea {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+  border-color: #cbd5e1 !important;
+}
+
+[data-theme="normal"] input:focus,
+[data-theme="normal"] select:focus,
+[data-theme="normal"] textarea:focus {
+  border-color: #059669 !important;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(5, 150, 105, 0.15) !important;
+}
+
+/* Header Styling in Normal Mode */
+[data-theme="normal"] header {
+  background-color: rgba(255, 255, 255, 0.98) !important;
+  border-bottom-color: #e2e8f0 !important;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05) !important;
+}
+
+/* Header Top Authority Bar */
+[data-theme="normal"] header > div:first-child {
+  background: linear-gradient(to right, #065f46, #047857, #065f46) !important;
+  color: #f0fdf4 !important;
+  border-bottom-color: #047857 !important;
+}
+
+[data-theme="normal"] header > div:first-child .text-amber-400,
+[data-theme="normal"] header > div:first-child .text-amber-200\/90 {
+  color: #fef3c7 !important;
+}
+
+[data-theme="normal"] header > div:first-child .text-emerald-300 {
+  color: #a7f3d0 !important;
+}
+
+[data-theme="normal"] header > div:first-child .bg-emerald-950\/60 {
+  background-color: rgba(2, 44, 34, 0.5) !important;
+  border-color: rgba(167, 243, 208, 0.3) !important;
+}
+
+/* Primary Tab Switcher in Normal Mode */
+[data-theme="normal"] .bg-slate-900\/90.border-amber-900\/40 {
+  background-color: #f1f5f9 !important;
+  border-color: #e2e8f0 !important;
+}
+
+[data-theme="normal"] button.bg-slate-950\/80 {
+  background-color: #ffffff !important;
+  color: #334155 !important;
+  border: 1px solid #e2e8f0 !important;
+}
+
+[data-theme="normal"] button.bg-slate-950\/80:hover {
+  background-color: #f8fafc !important;
+  color: #0f172a !important;
+}
+
+/* Active tab contrast preservation */
+[data-theme="normal"] button.bg-gradient-to-r.from-amber-500,
+[data-theme="normal"] button.bg-gradient-to-r.from-emerald-500 {
+  color: #0f172a !important;
+}
+
+[data-theme="normal"] button.bg-gradient-to-r.from-amber-500 span,
+[data-theme="normal"] button.bg-gradient-to-r.from-emerald-500 span {
+  color: #0f172a !important;
+}
+
+/* Primary Action Buttons */
+[data-theme="normal"] .bg-gradient-to-r.from-amber-500.via-emerald-500.to-teal-400 {
+  background: linear-gradient(135deg, #059669 0%, #0d9488 50%, #0284c7 100%) !important;
+  color: #ffffff !important;
+}
+
+[data-theme="normal"] .bg-gradient-to-r.from-amber-500.via-emerald-500.to-teal-400 span,
+[data-theme="normal"] .bg-gradient-to-r.from-amber-500.via-emerald-500.to-teal-400 svg {
+  color: #ffffff !important;
+}
+
+/* Inset containers / badges */
+[data-theme="normal"] .bg-slate-800 {
+  background-color: #f1f5f9 !important;
+  color: #334155 !important;
+}
+
+[data-theme="normal"] .bg-amber-950\/80,
+[data-theme="normal"] .bg-amber-950\/50 {
+  background-color: #fef3c7 !important;
+  border-color: #fde68a !important;
+  color: #92400e !important;
+}
+
+[data-theme="normal"] .bg-emerald-950\/80,
+[data-theme="normal"] .bg-emerald-950\/50 {
+  background-color: #d1fae5 !important;
+  border-color: #a7f3d0 !important;
+  color: #065f46 !important;
+}
+
+/* Proceed to Step 2 Banner */
+[data-theme="normal"] .bg-gradient-to-r.from-emerald-950\/60 {
+  background: linear-gradient(135deg, #ecfdf5 0%, #f0fdf4 100%) !important;
+  border-color: #a7f3d0 !important;
+}
+
+[data-theme="normal"] .bg-gradient-to-r.from-emerald-950\/60 h4 {
+  color: #065f46 !important;
+}
+
+[data-theme="normal"] .bg-gradient-to-r.from-emerald-950\/60 p {
+  color: #1e3a2b !important;
+}
+
+/* Modals & Dropdown menus */
+[data-theme="normal"] .bg-slate-900.border-slate-700,
+[data-theme="normal"] .bg-slate-900.border-2 {
+  background-color: #ffffff !important;
+  border-color: #e2e8f0 !important;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Preserve white text in colored laminate layers */
+[data-theme="normal"] .bg-gradient-to-r.from-sky-600 *,
+[data-theme="normal"] .bg-gradient-to-r.from-amber-600 *,
+[data-theme="normal"] .bg-gradient-to-r.from-emerald-600 *,
+[data-theme="normal"] .bg-gradient-to-r.from-indigo-600 *,
+[data-theme="normal"] .bg-gradient-to-r.from-rose-600 *,
+[data-theme="normal"] .bg-black\/50 * {
+  color: #ffffff !important;
+}
+
+/* High contrast JSON Code Block */
+[data-theme="normal"] .bg-slate-950 pre {
+  background-color: #0f172a !important;
+}
+[data-theme="normal"] .bg-slate-950 pre code {
+  color: #34d399 !important;
+}
+
+/* --------------------------------------------------------
+   2. FOOD WARM THEME (Warm Saffron / Amber Culinary Theme)
+   -------------------------------------------------------- */
+[data-theme="food"],
+[data-theme="food"] body {
+  background-color: #140d07 !important;
+  color: #fef3c7 !important;
+}
+
+[data-theme="food"] .bg-slate-950,
+[data-theme="food"] .bg-slate-950\/95 {
+  background-color: #140d07 !important;
+}
+
+[data-theme="food"] .bg-slate-900,
+[data-theme="food"] .bg-slate-900\/95 {
+  background-color: #1f140c !important;
+  border-color: #451a03 !important;
+}
+
+[data-theme="food"] header {
+  background-color: rgba(31, 20, 12, 0.95) !important;
+  border-bottom-color: #451a03 !important;
+}
+
+[data-theme="food"] header > div:first-child {
+  background: linear-gradient(to right, #451a03, #78350f, #451a03) !important;
+}
+
+[data-theme="food"] input,
+[data-theme="food"] select,
+[data-theme="food"] textarea {
+  background-color: #140d07 !important;
+  color: #fef3c7 !important;
+  border-color: #78350f !important;
+}
+
+/* --------------------------------------------------------
+   3. DARK THEME (Modern Sleek Slate Dark Mode)
+   -------------------------------------------------------- */
+[data-theme="dark"],
+[data-theme="dark"] body {
+  background-color: #020617 !important;
+  color: #f8fafc !important;
+}
+
+[data-theme="dark"] .bg-slate-950,
+[data-theme="dark"] .bg-slate-950\/95 {
+  background-color: #020617 !important;
+}
+
+[data-theme="dark"] .bg-slate-900,
+[data-theme="dark"] .bg-slate-900\/95 {
+  background-color: #0f172a !important;
+  border-color: #1e293b !important;
+}
+
+[data-theme="dark"] header {
+  background-color: rgba(2, 6, 23, 0.95) !important;
+  border-bottom-color: #1e293b !important;
+}
+
+[data-theme="dark"] input,
+[data-theme="dark"] select,
+[data-theme="dark"] textarea {
+  background-color: #020617 !important;
+  color: #f8fafc !important;
+  border-color: #334155 !important;
+}

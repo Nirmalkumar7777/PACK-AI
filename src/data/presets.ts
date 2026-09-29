@@ -1,0 +1,211 @@
+import { CommodityPreset } from '../types';
+
+export const COMMODITY_PRESETS: CommodityPreset[] = [
+  {
+    id: 'alphonso-mango',
+    name: 'Alphonso Mango (Ratnagiri Export Grade)',
+    category: 'Fresh Produce',
+    description: 'Highly perishable tropical stone fruit with climacteric respiration surge during ripening.',
+    icon: 'produce',
+    keyChallenge: 'High respiration rate (65 mL O2/kg·h) causing anaerobic off-flavor fermentation if hermetically sealed.',
+    data: {
+      commodity_name: 'Alphonso Mango',
+      category: 'Fresh Produce',
+      moisture: 83,
+      fat: 0.4,
+      respiration_rate: 65,
+      shelf_life: 21,
+      temp: 12,
+      humidity: 88,
+      storage_mode: 'Chilled',
+      pack_size_grams: 1000,
+      batch_volume_units: 5000,
+      commodity_retail_price: 650,
+      target_packaging_budget_per_unit: 12.0
+    }
+  },
+  {
+    id: 'potato-namkeen',
+    name: 'Crispy Potato Chips / Bhujia',
+    category: 'Dry Goods',
+    description: 'High-fat deep fried extruded snack prone to lipid rancidity and moisture softening.',
+    icon: 'snack',
+    keyChallenge: 'Fat > 30% demands OTR < 10 to halt rancidity; moisture < 2% demands WVTR < 1.5 to stay crispy.',
+    data: {
+      commodity_name: 'Crispy Potato Chips / Bhujia',
+      category: 'Dry Goods',
+      moisture: 1.8,
+      fat: 34,
+      respiration_rate: 0,
+      shelf_life: 180,
+      temp: 28,
+      humidity: 65,
+      storage_mode: 'Ambient',
+      pack_size_grams: 150,
+      batch_volume_units: 50000,
+      commodity_retail_price: 40,
+      target_packaging_budget_per_unit: 2.20
+    }
+  },
+  {
+    id: 'malai-paneer',
+    name: 'Fresh Malai Paneer (Vacuum/MAP)',
+    category: 'High-Fat/Dairy',
+    description: 'Traditional Indian fresh cottage cheese with high water activity (aw > 0.98) and milk fat.',
+    icon: 'dairy',
+    keyChallenge: 'Simultaneous high moisture (56%) and high fat (23%) requiring zero-light, anti-microbial barrier.',
+    data: {
+      commodity_name: 'Fresh Malai Paneer',
+      category: 'High-Fat/Dairy',
+      moisture: 56,
+      fat: 23,
+      respiration_rate: 0,
+      shelf_life: 45,
+      temp: 4,
+      humidity: 85,
+      storage_mode: 'Chilled',
+      pack_size_grams: 200,
+      batch_volume_units: 15000,
+      commodity_retail_price: 90,
+      target_packaging_budget_per_unit: 3.50
+    }
+  },
+  {
+    id: 'desi-ghee',
+    name: 'Desi Cow Ghee (Clarified Butter)',
+    category: 'High-Fat/Dairy',
+    description: 'Concentrated milk fat prone to oxidation, off-flavor aldehydes, and UV degradation.',
+    icon: 'ghee',
+    keyChallenge: 'Ultra-high fat (99.5%) requires total oxygen & UV light barrier (Foil/EVOH laminate).',
+    data: {
+      commodity_name: 'Desi Cow Ghee',
+      category: 'High-Fat/Dairy',
+      moisture: 0.3,
+      fat: 99.5,
+      respiration_rate: 0,
+      shelf_life: 365,
+      temp: 25,
+      humidity: 50,
+      storage_mode: 'Ambient',
+      pack_size_grams: 1000,
+      batch_volume_units: 10000,
+      commodity_retail_price: 750,
+      target_packaging_budget_per_unit: 14.0
+    }
+  },
+  {
+    id: 'strawberries',
+    name: 'Mahabaleshwar Strawberries',
+    category: 'Fresh Produce',
+    description: 'Soft-skinned berry vulnerable to Botrytis mold, desiccation, and rapid respiration.',
+    icon: 'fruit',
+    keyChallenge: 'Moderate respiration (38 mL O2/kg·h); high humidity condensation causes mold without anti-fog.',
+    data: {
+      commodity_name: 'Mahabaleshwar Strawberries',
+      category: 'Fresh Produce',
+      moisture: 91,
+      fat: 0.3,
+      respiration_rate: 38,
+      shelf_life: 12,
+      temp: 2,
+      humidity: 92,
+      storage_mode: 'Chilled',
+      pack_size_grams: 250,
+      batch_volume_units: 8000,
+      commodity_retail_price: 120,
+      target_packaging_budget_per_unit: 4.0
+    }
+  },
+  {
+    id: 'poultry-breast',
+    name: 'Fresh Dressed Chicken Breast',
+    category: 'Meat/Poultry',
+    description: 'Fresh poultry meat subject to rapid aerobic microbial proliferation (Pseudomonas spp.).',
+    icon: 'meat',
+    keyChallenge: 'Needs high CO2 (25-30%) antimicrobial atmosphere + high gas barrier EVOH web.',
+    data: {
+      commodity_name: 'Fresh Dressed Chicken Breast',
+      category: 'Meat/Poultry',
+      moisture: 74,
+      fat: 3.5,
+      respiration_rate: 0,
+      shelf_life: 14,
+      temp: 1,
+      humidity: 90,
+      storage_mode: 'Chilled',
+      pack_size_grams: 500,
+      batch_volume_units: 12000,
+      commodity_retail_price: 180,
+      target_packaging_budget_per_unit: 6.50
+    }
+  },
+  {
+    id: 'frozen-paratha',
+    name: 'Frozen Stuffed Parathas',
+    category: 'Frozen',
+    description: 'Quick frozen flatbread with vegetable/paneer filling requiring freeze-thaw crack resistance.',
+    icon: 'frozen',
+    keyChallenge: 'Cryogenic cold-crack at -18°C and freezer burn moisture dehydration.',
+    data: {
+      commodity_name: 'Frozen Stuffed Paratha',
+      category: 'Frozen',
+      moisture: 42,
+      fat: 14,
+      respiration_rate: 0,
+      shelf_life: 270,
+      temp: -18,
+      humidity: 75,
+      storage_mode: 'Frozen',
+      pack_size_grams: 400,
+      batch_volume_units: 20000,
+      commodity_retail_price: 140,
+      target_packaging_budget_per_unit: 5.0
+    }
+  },
+  {
+    id: 'artisan-bread',
+    name: 'Soft Sandwich Bread / Bun',
+    category: 'Bakery',
+    description: 'Yeast-leavened bakery product prone to staling (retrogradation) and mold development.',
+    icon: 'bakery',
+    keyChallenge: 'Mold proliferation within 4 days under humid Indian conditions; requires CO2 flush.',
+    data: {
+      commodity_name: 'Soft Sandwich Bread',
+      category: 'Bakery',
+      moisture: 38,
+      fat: 3.2,
+      respiration_rate: 0,
+      shelf_life: 15,
+      temp: 24,
+      humidity: 70,
+      storage_mode: 'Ambient',
+      pack_size_grams: 400,
+      batch_volume_units: 25000,
+      commodity_retail_price: 45,
+      target_packaging_budget_per_unit: 2.0
+    }
+  },
+  {
+    id: 'roasted-cashews',
+    name: 'Roasted & Salted Cashew Nuts',
+    category: 'Dry Goods',
+    description: 'Premium nut with unsaturated fatty acids that readily undergo oxidative rancidity.',
+    icon: 'cashew',
+    keyChallenge: 'Fat content > 45% requires hermetic OTR < 2 cc/m²/day and inert N2 purge.',
+    data: {
+      commodity_name: 'Roasted & Salted Cashew Nuts',
+      category: 'Dry Goods',
+      moisture: 3.2,
+      fat: 46,
+      respiration_rate: 0,
+      shelf_life: 240,
+      temp: 24,
+      humidity: 55,
+      storage_mode: 'Ambient',
+      pack_size_grams: 250,
+      batch_volume_units: 10000,
+      commodity_retail_price: 320,
+      target_packaging_budget_per_unit: 5.50
+    }
+  }
+];
